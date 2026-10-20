@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Carrito - ElectroEjemplo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: Arial, sans-serif; margin: 0; color: #111; background: #fff; }
+.aviso { background: #111; color: #fff; padding: 8px 16px; font-size: 14px; text-align: center; }
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+.fila { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0; }
+button { padding: 10px 16px; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="aviso">SITIO FICTICIO creado para formación. Ningún producto, precio ni empresa es real.</div>
+<main>
+<p><a href="index.html">&larr; Volver</a></p>
+<h1>Tu carrito</h1>
+
+<div class="fila"><span>Teclado inalámbrico Teclea Slim</span><span>29,00 €</span></div>
+<div class="fila"><span>Gastos de gestión</span><span>4,95 €</span></div>
+
+<form action="#" method="post">
+<p><label><input type="checkbox" name="seguro" checked> Añadir seguro de envío premium (5,99 €)</label></p>
+<p><label><input type="checkbox" name="suscripcion" checked> Suscribirme a Club Electro (9,99 € al mes, renovación automática)</label></p>
+<p><label><input type="checkbox" name="cesion" checked> Acepto la cesión de mis datos a empresas colaboradoras</label></p>
+<p><label><input type="checkbox" name="condiciones"> He leído las <a href="condiciones.html">condiciones de venta</a></label></p>
+
+<div class="fila"><strong>Total</strong><strong>49,93 €</strong></div>
+<p><button type="submit">Pagar</button></p>
+<p><small>Para darte de baja del Club Electro, envía una carta por correo postal a nuestra sede.</small></p>
+</form>
+</main>
+</body>
+</html>
