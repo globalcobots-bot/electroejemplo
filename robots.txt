@@ -1,0 +1,4 @@
+# Sitio ficticio de formación
+User-agent: *
+Disallow: /privado/
+Allow: /
