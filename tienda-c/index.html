@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>HogarEjemplo - Ofertas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: Arial, sans-serif; margin: 0; color: #111; background: #fff; line-height: 1.4; }
+.aviso { background: #111; color: #fff; padding: 8px 16px; font-size: 14px; text-align: center; }
+header, main, footer { max-width: 960px; margin: 0 auto; padding: 16px; }
+nav a { margin-right: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.producto { border: 1px solid #ccc; padding: 12px; border-radius: 6px; }
+.precio-antes { text-decoration: line-through; color: #777; }
+.precio-ahora { font-size: 22px; font-weight: bold; color: #1d4ed8; }
+.urgencia { color: #b00020; font-weight: bold; font-size: 14px; }
+.badge { background: #1d4ed8; color: #fff; padding: 2px 6px; font-size: 12px; border-radius: 3px; }
+.fila { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0; }
+</style>
+</head>
+<body>
+<div class="aviso">SITIO FICTICIO creado para formación. Ningún producto, precio ni empresa es real.</div>
+<header>
+<h1>HogarEjemplo</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="condiciones.html">Condiciones de venta</a>
+<a href="checkout.html">Carrito</a>
+</nav>
+</header>
+
+<main>
+<h2>Novedades y ofertas</h2>
+<div class="grid">
+
+<article class="producto" id="prod-001" data-sku="HOG-001" data-precio-previo-30d="89.0">
+<h3 class="nombre">Lámpara de pie Nórdica</h3>
+<span class="badge">-22%</span>
+<p><span class="precio-antes">89,00 €</span> <span class="precio-ahora">69,00 €</span></p>
+<p class="urgencia">Quedan 3 unidades</p>
+<p class="nota">Precio anterior: menor precio de los últimos 30 días.</p>
+</article>
+
+<article class="producto" id="prod-002" data-sku="HOG-002" data-precio-previo-30d="32.0">
+<h3 class="nombre">Set de cuatro toallas</h3>
+<p><span class="precio-ahora">32,00 €</span></p>
+<p class="nota">Precio final con IVA incluido.</p>
+</article>
+
+<article class="producto" id="prod-003" data-sku="HOG-003" data-precio-previo-30d="24.0">
+<h3 class="nombre">Cafetera de émbolo 1 L</h3>
+<span class="badge">-17%</span>
+<p><span class="precio-antes">24,00 €</span> <span class="precio-ahora">19,90 €</span></p>
+<p class="urgencia">Quedan 7 unidades</p>
+<p class="nota">Precio anterior: menor precio de los últimos 30 días. Oferta válida hasta el 31/10/2026.</p>
+</article>
+
+<article class="producto" id="prod-004" data-sku="HOG-004" data-precio-previo-30d="120.0">
+<h3 class="nombre">Estantería modular</h3>
+<p><span class="precio-ahora">120,00 €</span></p>
+<p class="nota">Precio final con IVA incluido.</p>
+</article>
+
+</div>
+</main>
+
+<footer>
+<hr>
+<form action="#" method="post">
+<label><input type="checkbox" name="newsletter"> Quiero recibir ofertas por correo</label>
+</form>
+<p><a href="condiciones.html">Condiciones de venta</a> | Titular: HogarEjemplo S.L. (empresa ficticia), calle Ejemplo 2, ciudad ficticia</p>
+</footer>
+</body>
+</html>
