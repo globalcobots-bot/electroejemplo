@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ModaEjemplo - Rebajas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: Arial, sans-serif; margin: 0; color: #111; background: #fff; line-height: 1.4; }
+.aviso { background: #111; color: #fff; padding: 8px 16px; font-size: 14px; text-align: center; }
+header, main, footer { max-width: 960px; margin: 0 auto; padding: 16px; }
+nav a { margin-right: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.producto { border: 1px solid #ccc; padding: 12px; border-radius: 6px; }
+.precio-antes { text-decoration: line-through; color: #777; }
+.precio-ahora { font-size: 22px; font-weight: bold; color: #1d4ed8; }
+.urgencia { color: #b00020; font-weight: bold; font-size: 14px; }
+.badge { background: #1d4ed8; color: #fff; padding: 2px 6px; font-size: 12px; border-radius: 3px; }
+.fila { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0; }
+</style>
+</head>
+<body>
+<div class="aviso">SITIO FICTICIO creado para formación. Ningún producto, precio ni empresa es real.</div>
+<header>
+<h1>ModaEjemplo</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="condiciones.html">Condiciones de venta</a>
+<a href="checkout.html">Carrito</a>
+</nav>
+</header>
+<p class="urgencia">Rebajas de temporada terminan en: <span id="cuenta-atras">60:00</span></p>
+
+<main>
+<h2>Novedades y ofertas</h2>
+<div class="grid">
+
+<article class="producto" id="prod-001" data-sku="MOD-001" data-precio-previo-30d="79.0">
+<h3 class="nombre">Chaqueta ligera Brisa</h3>
+<span class="badge">-25%</span>
+<p><span class="precio-antes">79,00 €</span> <span class="precio-ahora">59,00 €</span></p>
+<p class="urgencia">¡Última oportunidad! Termina hoy</p>
+<p class="nota">Precio anterior: menor precio de los últimos 30 días.</p>
+</article>
+
+<article class="producto" id="prod-002" data-sku="MOD-002" data-precio-previo-30d="65.0">
+<h3 class="nombre">Zapatillas Camino</h3>
+<span class="badge">-23%</span>
+<p><span class="precio-antes">65,00 €</span> <span class="precio-ahora">49,90 €</span></p>
+<p class="urgencia">¡Última oportunidad! Termina hoy</p>
+<p class="nota">Precio anterior: menor precio de los últimos 30 días.</p>
+</article>
+
+<article class="producto" id="prod-003" data-sku="MOD-003" data-precio-previo-30d="39.0">
+<h3 class="nombre">Mochila Urbana 20 L</h3>
+<span class="badge">-49%</span>
+<p><span class="precio-antes">69,00 €</span> <span class="precio-ahora">34,90 €</span></p>
+<p class="urgencia">¡Última oportunidad! Termina hoy</p>
+<p class="nota">Precio anterior: PVP recomendado.</p>
+</article>
+
+<article class="producto" id="prod-004" data-sku="MOD-004" data-precio-previo-30d="15.0">
+<h3 class="nombre">Camiseta básica algodón</h3>
+<p><span class="precio-ahora">15,00 €</span></p>
+<p class="nota">Precio final con IVA incluido.</p>
+</article>
+
+</div>
+</main>
+
+<footer>
+<hr>
+<form action="#" method="post">
+<label><input type="checkbox" name="newsletter"> Quiero recibir novedades por correo</label>
+</form>
+<p><a href="condiciones.html">Condiciones de venta</a> | Titular: ModaEjemplo S.L. (empresa ficticia), calle Ejemplo 1, ciudad ficticia</p>
+</footer>
+<script>
+// Cuenta atrás ficticia: se reinicia cada vez que llega a cero.
+var restante = 60 * 60;
+var el = document.getElementById('cuenta-atras');
+function pinta() {
+var m = String(Math.floor(restante / 60)).padStart(2, '0');
+var s = String(restante % 60).padStart(2, '0');
+el.textContent = m + ':' + s;
+restante = restante > 0 ? restante - 1 : 60 * 60;
+}
+setInterval(pinta, 1000);
+</script>
+</body>
+</html>
