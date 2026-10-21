@@ -16,6 +16,11 @@ nav a { margin-right: 16px; }
 .urgencia { color: #b00020; font-weight: bold; font-size: 14px; }
 .badge { background: #1d4ed8; color: #fff; padding: 2px 6px; font-size: 12px; border-radius: 3px; }
 .fila { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 8px 0; }
+.producto img { display: none; }
+.producto::before { content: ""; display: block; width: 200px; height: 140px; margin: 0 auto 8px; border-radius: 6px; background: url(../img/moda.svg) 0 0 no-repeat; }
+#prod-002::before { background-position: -200px 0; }
+#prod-003::before { background-position: -400px 0; }
+#prod-004::before { background-position: -600px 0; }
 </style>
 </head>
 <body>
