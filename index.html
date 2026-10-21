@@ -15,6 +15,13 @@ nav a { margin-right: 16px; }
 .precio-ahora { font-size: 22px; font-weight: bold; color: #b00020; }
 .urgencia { color: #b00020; font-weight: bold; font-size: 14px; }
 .badge { background: #b00020; color: #fff; padding: 2px 6px; font-size: 12px; border-radius: 3px; }
+.producto img { display: none; }
+.producto::before { content: ""; display: block; width: 200px; height: 140px; margin: 0 auto 8px; border-radius: 6px; background: url(img/electro.svg) 0 0 no-repeat; }
+#prod-002::before { background-position: -200px 0; }
+#prod-003::before { background-position: -400px 0; }
+#prod-004::before { background-position: -600px 0; }
+#prod-005::before { background-position: -800px 0; }
+#prod-006::before { background-position: -1000px 0; }
 </style>
 </head>
 <body>
